@@ -16,7 +16,7 @@ class Tests {
 
     @BeforeAll
     static void setUpAll() {
-        System.setProperty("webdriver.chrome.driver", "C:\\NETOLOGY\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
     }
 
     @BeforeEach
