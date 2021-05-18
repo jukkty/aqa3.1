@@ -22,7 +22,6 @@ class Tests {
 
     @BeforeEach
     void setUp() {
-        driver = new ChromeDriver();
 //        Не могу понять смысл добавления нижестоящего кода? С ним даже как-то кривее работает.
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-dev-shm-usage");
