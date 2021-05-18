@@ -39,7 +39,7 @@ class Tests {
     @Test
     @DisplayName("Заявка успешно заполняется и отправляется")
     void shouldTestWithNormalData() throws InterruptedException {
-        driver.get("http://localhost:7777");
+        driver.get("http://localhost:9999");
         Thread.sleep(1000);
         List<WebElement> elements = driver.findElements(By.className("input__control"));
         elements.get(0).sendKeys("Якимов Дмитрий");
@@ -54,7 +54,7 @@ class Tests {
     @Test
     @DisplayName("Заявка не заполняется с неверными данными в поле Фамилия и Имя")
     void shouldTestIfWrongName() throws InterruptedException {
-        driver.get("http://localhost:7777");
+        driver.get("http://localhost:9999");
         Thread.sleep(1000);
         List<WebElement> elements = driver.findElements(By.className("input__control"));
         elements.get(0).sendKeys("Iachimov Dmitri");
@@ -68,7 +68,7 @@ class Tests {
     @Test
     @DisplayName("Заявка не заполняется с неверными данными в поле Телефон")
     void shouldTestIfWrongNumber() throws InterruptedException {
-        driver.get("http://localhost:7777");
+        driver.get("http://localhost:9999");
         Thread.sleep(1000);
         List<WebElement> elements = driver.findElements(By.className("input__control"));
         elements.get(0).sendKeys("Якимов Дмитрий");
